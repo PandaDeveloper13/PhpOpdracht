@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Formulier Validatie</title>
+</head>
+<body>
+<form class="Form" action="Includes/verwerk.php" method="POST">
+    <label>Naam:</label>
+    <input type="text" name="Name" placeholder="Naam" required>
+    <p>Minimaal 3 tekens</p>
+
+    <label>Email:</label>
+    <input type="email" name="mail" placeholder="Email" required>
+    <p>Geldig e-mailadres</p>
+
+    <label>Leeftijd:</label>
+    <input type="number" name="age" placeholder="Leeftijd" required>
+    <p>Moet een geldig getal zijn</p>
+
+    <label>Wachtwoord:</label>
+    <input type="password" name="Password" placeholder="Wachtwoord" required>
+    <p>Minimaal 6 tekens</p>
+
+    <button type="submit">Verzenden</button>
+</form>
+</body>
+</html>
